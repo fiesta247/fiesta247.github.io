@@ -1,5 +1,5 @@
 ---
-title: "신호와 주파수 영역 - spectrum analysis"
+title: 1\. 신호와 주파수 영역 - spectrum analysis
 categories:
     - Embedded Recipes
 tags:
@@ -7,9 +7,8 @@ tags:
     - Spectrum
     - Fourier Transform
 ---
-# 1. 신호와 주파수 영역  
 ## 주파수
-주파수: 진동운동에서 단위 시간당 같은 것이 일어난 횟수  
+주파수란 진동운동에서 단위 시간당 같은 것이 일어난 횟수이다.  
 
 예를 들어 \\[cos(2\pi t)\\]라는 주기함수는 1초의 1번의 주기가 있는 함수를 말한다.  
 
@@ -21,7 +20,7 @@ tags:
 ![시간축과 주파수축]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes-book-images/spectrum-analysis-01.jpg)
 {: .full}  
 
-\\(cos(2\pi(20KHz)t)\\)는 주파수 영역에서 \\(20kHz\\) 하나만의 성분을 가진다.  
+\\(cos(2\pi(20kHz)t)\\)는 주파수 영역에서 \\(20kHz\\) 하나만의 성분을 가진다.  
 
 보통 \\(cos\\)와 같이 주기를 갖는 신호를 **AC**라 하고, 주파수를 가지지 않는,  
 계속해서 같은 크기의 레벨을 가지는 신호를 **DC**라고 부른다.  
@@ -37,7 +36,8 @@ tags:
 
 Fourier Transform를 하면 시간 축의 신호를 주파수 별로 분리해 준다.  
 
-    어떤 신호 = 어떤 주기의 주파수 성분 + 또 어떤 주기의 주파수 성분 + 또 다른 어떤 주기의 주파수 성분 ...
+    어떤 신호 = 어떤 주기의 주파수 성분 + 또 어떤 주기의 주파수 성분 + 
+              또 다른 어떤 주기의 주파수 성분 ...
 
 이런 식이고, 어떤 신호를 이루기 위해서는 각각의 어떤 주기의 주파수 성분이 공헌하는 바들이 틀린데,  
 그 공헌하는 바들이 각각 크기(Amplitude)로 나타난다.  
@@ -49,7 +49,7 @@ Fourier Transform를 하면 시간 축의 신호를 주파수 별로 분리해 �
     
 이런식으로 표현이 가능하다.  
 
-예를 들어 \\(Rect(t)\\) 는 무한히 많은 \\(cos\\) 함수의 합으로 풀어헤칠 수 있다는 것이 Fourier Transform이다.  
+예를 들어 \\(Rect(t)\\) 는 무한히 많은 \\(cos\\) 함수의 합으로 풀어헤칠 수 있다는 것이 **Fourier Transform**이다.  
 
 ![Rectangular 함수의 Fourier Transform]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes-book-images/spectrum-analysis-03.jpg)
 {: .full}  
@@ -66,8 +66,7 @@ Rectangular 신호의 주파수 영역에서의 모양은 **sinc function**이�
 Rectangular 함수는 주파수 영역의 DC 성분의 크기가 가장 크면서 \\(\frac{1}{\tau}Hz\\) 마다 \\(\frac{1}{\tau}\\) 의 Harmonics의 주파수 성분은 0으로서 그 크기가 없고,  
 나머지는 양쪽 축으로 무한히 퍼진 주파수 성분이 있음을 알 수 있다.  
 
-쉬운 예로 \\(\tau=1\\) 인 예를 들면,  
- \\(\frac{1}{\tau}=1\\) 이므로, 1, 2, 3, 4, 5 ... Hz에서는 주파수 성분이 없고, Rectangular 신호의 면적은 1이므로, DC 성분의 크기는 1이다.  
+쉬운 예로 \\(\tau=1\\) 인 예를 들면, \\(\frac{1}{\tau}=1\\) 이므로, 1, 2, 3, 4, 5 ... Hz에서는 주파수 성분이 없고, Rectangular 신호의 면적은 1이므로, DC 성분의 크기는 1이다.  
 
 ![Rectangular 함수의 Fourier Transform]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes-book-images/spectrum-analysis-04.jpg)
 {: .full}  
@@ -88,7 +87,7 @@ Rectangular 함수는 주파수 영역의 DC 성분의 크기가 가장 크면�
 약간의 중주파(이 포스팅에서만 중주파라는 표현을 사용합니다) AC 신호들의 합과,  
 완전 필요없는 전 대역에 걸쳐있는 자잘한 고주파 신호로 구성되었다는 것을 알 수 있다.  
 
-Spectrum Analyzer로 어껀 신호를 들여다 보면 그 신호가 어떤 주파수들로 이루어졌는지를 눈으로 확인 할 수 있다.  
+Spectrum Analyzer로 어떤 신호를 들여다 보면 그 신호가 어떤 주파수들로 이루어졌는지를 눈으로 확인 할 수 있다.  
 ![spectrum Analyzer 로 본 어떤 신호]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes-book-images/spectrum-analysis-06.jpg)
 {: .full}  
 
