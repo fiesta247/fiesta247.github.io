@@ -1,5 +1,5 @@
 ---
-title: 1\. lo신호와 주파수 영역 - spectrum analysis
+title: 1\. 신호와 주파수 영역 - spectrum analysis
 categories:
     - Embedded Recipes
 tags:
