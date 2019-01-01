@@ -94,3 +94,4 @@ toc_sticky: true
 
 PCB 에 간혹 테스트 포인터(TP)가 있다. 이것이 0옴저항을 달아서 점퍼 대신에 넣는것이다. Board에 사용되는 chip들은 ball type이 많아서 찍어볼 수 있는 다리가 나와있지 않다. 그러다보니 테스트 및 측정 하기가 어렵다. 그래서 중요한 pin에는 0옴을 달아서 board위에 나올 수 있도록 한다.
 
+<a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
