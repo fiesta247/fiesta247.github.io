@@ -6,6 +6,10 @@ tags:
     - Analog Signals
     - Digital Signals
     - Ground
+toc: true 
+toc_label: "Contents" 
+toc_icon: "cog"
+toc_sticky: true
 ---
 ## Analog 신호와 Digital 신호의 관계  
 Digital 신호는 Analog 신호의 일종이며, "대부분" DC 성분으로 이루어진 "있다/없다"의 Boolean Logic값이다.  
@@ -15,7 +19,6 @@ Analog 신호는 보통 AC 와 DC (교류와 직류) 성분으로 이루어져 �
 ![보통의 AC+DC 신호]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes-book-images/analog-digital-and-ground-01.jpg)
 {: .full}  
 
-* * *
 ## Digital 신호  
 Digital 신호는 High/Low 두 개의 Logic value만을 가질 수 있으며, 그 크기(Level)는 정하기 나름이다(3.3V, 5V 등).  
 
@@ -35,7 +38,6 @@ Digital 신호는 한계 값 또는 임계 값(Threshold)라는 특정 값 이�
 최초로 Bounce되는 시점에서 원하는 전압이나 전류보다 더 작은 양이 흐르기도 한다. 이런 경우에서는 회로는 전력문제에 직면할 수도 있다. 최악의 경우, System이 멈출 수도 있다.  
 게다가 이런 Bouncing이 있으면, Digital 신호의 Level 인식 문제가 발생 할 수도 있다(0인데 1로, 1인데 0으로).  
 
-* * *
 ## Ground(GND)  
 Ground(GND)는 모든 전기, 전자 회로에서 다른 모든 전위에 대하여 기준이 되는 0V를 말하며, 일반적으로 전기의 -(마이너스)극을 의미하기도 한다. GND는 system내부에서 모든 current가 모이는 곳이다.  
 
@@ -63,4 +65,5 @@ AGND 는 Analog Ground, DGND 는 Digital Ground이다. Analog 신호는 Analog �
 출처: EMBEDDED RECIPES(corner book),  
 친절한 임베디드 시스템 개발자 되기 강좌 - Analog 신호와 Digital 신호, 그리고 Ground [링크](http://recipes.egloos.com/4968642) 
 </sub>
+
 <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>

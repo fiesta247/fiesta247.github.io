@@ -6,6 +6,10 @@ tags:
     - Frequency
     - Spectrum
     - Fourier Transform
+toc: true 
+toc_label: "Contents" 
+toc_icon: "cog"
+toc_sticky: true
 ---
 ## 주파수
 주파수란 진동운동에서 단위 시간당 같은 것이 일어난 횟수이다.  
@@ -30,7 +34,6 @@ tags:
 ![DC신호의 시간축과 주파수축]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes-book-images/spectrum-analysis-02.jpg)
 {: .full}
 
-* * *
 ## Fourier Transform
 모든 신호는 무한개의 \\(cos\\)또는 \\(sin\\)의 합으로 나타낼 수 있다.  
 
@@ -103,4 +106,5 @@ Euler공식에 의해 phase가 여기에 따라붙어 마이너스처럼 보이�
 출처: EMBEDDED RECIPES(corner book),  
 친절한 임베디드 시스템 개발자 되기 강좌 - 신호와 주파수 영역 [링크](http://recipes.egloos.com/4968600) 
 </sub>
+
 <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
