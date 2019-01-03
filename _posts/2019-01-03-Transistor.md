@@ -22,7 +22,7 @@ TR은 npn ![npn]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes
 
 npn형 TR의 Trans-Resistor의 기본 형태는 위의 그림과 같다.  
 
-Transistor의 symbol를 살펴보면, B는 base, E는 Emitter, C는 Collector라고 부른다.  
+Transistor의 symbol를 살펴보면, B는 base, E는 Emitter, C는 Collector라고 부른다.   
 B는 Transistor가 동작하게 하는 Switch역할이고, B에 의해 Switch가 ON되면 C와 E사이에 전류가 흐르게 됩니다.  
 (화살표는 여러가지 의미를 가지고 있지만, 전류가 흐르는 방향이라고 보면 된다).
  
