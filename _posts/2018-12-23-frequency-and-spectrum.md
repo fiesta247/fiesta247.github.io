@@ -4,7 +4,6 @@ categories:
     - Embedded Recipes
 tags:
     - Frequency
-    - Spectrum
     - Fourier Transform
 toc: true 
 toc_label: "Contents" 
