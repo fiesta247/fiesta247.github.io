@@ -104,7 +104,7 @@ Euler공식에 의해 phase가 여기에 따라붙어 마이너스처럼 보이�
 
 <sub>
 출처: EMBEDDED RECIPES(corner book),  
-친절한 임베디드 시스템 개발자 되기 강좌 - 신호와 주파수 영역 [링크](http://recipes.egloos.com/4968600) 
+친절한 임베디드 시스템 개발자 되기 강좌 - 신호와 주파수 영역 ([링크](http://recipes.egloos.com/4968600))  
 </sub>
 
 <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>

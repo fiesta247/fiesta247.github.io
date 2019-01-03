@@ -97,7 +97,7 @@ PCB 에 간혹 테스트 포인터(TP)가 있다. 이것이 0옴저항을 달아
 
 <sub>
 출처: EMBEDDED RECIPES(corner book),  
-친절한 임베디드 시스템 개발자 되기 강좌 - 초간단 회로이론 R (저항) L (인덕터) C (캐패시터) [링크](http://recipes.egloos.com/4968668)
+친절한 임베디드 시스템 개발자 되기 강좌 - 초간단 회로이론 R (저항) L (인덕터) C (캐패시터) ([링크](http://recipes.egloos.com/4968668))
 </sub>
 
 <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>

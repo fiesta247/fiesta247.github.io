@@ -63,7 +63,7 @@ AGND 는 Analog Ground, DGND 는 Digital Ground이다. Analog 신호는 Analog �
 
 <sub>
 출처: EMBEDDED RECIPES(corner book),  
-친절한 임베디드 시스템 개발자 되기 강좌 - Analog 신호와 Digital 신호, 그리고 Ground [링크](http://recipes.egloos.com/4968642) 
+친절한 임베디드 시스템 개발자 되기 강좌 - Analog 신호와 Digital 신호, 그리고 Ground ([링크](http://recipes.egloos.com/4968642))
 </sub>
 
 <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
