@@ -23,7 +23,7 @@ TR은 npn ![npn]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes
 npn형 TR의 Trans-Resistor의 기본 형태는 위의 그림과 같다.  
 
 Transistor의 symbol를 살펴보면, B는 base, E는 Emitter, C는 Collector라고 부른다.  
-B는 Transistor가 동작하게 하는 Switch역할이고, B에 의해 Switch가 ON되면 C와 E사이에 전류가 흐르게 됩니다.  
+B는 Transistor가 동작하게 하는 Switch역할이고, B에 의해 Switch가 ON되면 C와 E사이에 전류가 흐르게 된다.  
 (화살표는 여러가지 의미를 가지고 있지만, 전류가 흐르는 방향이라고 보면 된다).
  
 **Trans**-Resistor 의 의미를 다시 생각해보자.  
@@ -41,7 +41,7 @@ TR은 평소에는 전류가 흐르지 못하다가 화살표 방향으로 전�
 Switch (base)에 넣어주는 전압량(전류량)에 따라 포화영역, 활성영역, 차단영역이 생긴다.  
 CE간에 전류가 B의 작은 입력에 대하여, 급격하게 변해주는 영역을 **활성영역**, B에 흐르는 전압(전류)가 너무 낮아서 CE사이에 전류가 흐르지 못하는 영역을 **차단영역**, 그리고, 마지막으로 B에 흐르는 전압(전류)가 너무 높아서 CE사이의 전류가 더이상 흐르지 못하는 영역을 **포화영역**이라고 부른다.  
 
-TR의 주요 기능 둘은 **증폭기능**과 **Switching기능**이다. Switching기능은 Digital 신호 - 0과 1로만 이루어진 - 영역에서 사용되는 ON/OFF기능으로서 아예 흐르지 않거나, 흐르는 두가지 상태만을 표현하면 되기 때문에, **차단영역**과, **포화영역**을 이용하여,
+TR의 주요 기능 두가지는 **증폭기능**과 **Switching기능**이다. Switching기능은 Digital 신호 - 0과 1로만 이루어진 - 영역에서 사용되는 ON/OFF기능으로서 아예 흐르지 않거나, 흐르는 두가지 상태만을 표현하면 되기 때문에, **차단영역**과, **포화영역**을 이용하여,
 ON/OFF를 표현한다. (B의 switch성질을 이용해서 다른 chip의 전원을 on/off하여 그 chip의 동작을 on/off 할 수 있다).  
 
 증폭기능 즉, Amplifier는 Trans-Resistor의 의미 그대로인 **활성영역**에서 이용할 수 있다. 결국 증폭기능이란 아주 작은 전압 신호를 B에 흘려주면 CE간에 전류가 더 큰 폭으로 빠르게 움직이는 원리를 이용하는 것이다.  
