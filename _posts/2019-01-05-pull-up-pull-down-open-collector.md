@@ -3,9 +3,11 @@ title: 6\. Pull up, Pull down 그리고 Open collector
 categories:
     - Embedded Recipes
 tags:
-    - Pull up resistor
-    - Pull down resistor
+    - Pull up
+    - Pull down
     - Open collector
+    - Floating state
+    - High Impedance
 toc: true 
 toc_label: "Contents" 
 toc_icon: "cog"
@@ -18,7 +20,7 @@ toc_sticky: true
 
 Low Active의 예를 들어, 만일 CS (Chip Select)라는 pin이 Low Active일 때는 그것을 명확히 하기 위하여, /, _N, -, * 등을 붙여서 **CS/, CS_N, CS, CS\*** 등으로 표기하며, **CS bar** 라고 읽는다.  
 
-만약에 누군가가 "CS bar 가 동작을 잘 안해" 라고 말한다면 CS라는 pin이 전압 LOW 상태에서 동작하는데 그게 잘 안되는구나 라고 이해하면 된다.  
+만약에 누군가가 "CS bar 가 동작을 잘 안해" 라고 말한다면 "CS라는 pin이 전압 LOW 상태에서 동작하는데, 그게 잘 안되는구나" 라고 이해하면 된다.  
 High Active 라는 건 그 반대이며, 아무것도 붙이지 않는다.  
 
 Low Active의 경우에는 Low가 되었을 때만 동작이 되도록 확실하게 하기 위하여 평소 Default 값을 High로 만들어 놓고, Active되었을 때만 Low로 만들어주는 것이 가장 확실한 방법일 것이다.  
@@ -61,7 +63,7 @@ Open Collector는 다음 그림과 같이 여러개의 Master가 한개의 Slave
 
 ![OR instruction circuit]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes-book-images/pull-up-pull-down-open-collector-04.jpg){: .full}
 
-명령1 OR 명령2 회로(low active임에 유의 할 것)  
+<sub>\* 명령1 OR 명령2 회로(Low active임에 유의 할 것)</sub>  
 
 각 Master의 명령 input앞에 달려 있는 
 ![inverter]({{ site.url }}{{ site.baseurl }}/assets/images/embedded-recipes-book-images/pull-up-pull-down-open-collector-05.jpg)는 inverter로서 input의 상태를 반전시킨다. 
@@ -75,11 +77,18 @@ Open Collector는 다음 그림과 같이 여러개의 Master가 한개의 Slave
 
 Open Collector구조는 하나의 Master와 하나의 Slave에서도 사용 가능하지만, 여러개의 Master를 Slave에 붙여서, 전원 하나와, 저항 하나로 회로를 간단하게 만들 수 있는 장점이 있다.  
 
-보통 Digital chip의 pin description을 보면 open collector인 pin은 open collector라고 쓰여 있어, 그것을 고려하여 회로를 구성할 수록 더욱 더 진가를 발휘한다.
+보통 Digital chip의 pin description을 보면 open collector인 pin은 open collector라고 쓰여 있다.
  
 이런 구조는 전문용어로 **Wired OR** 라고 부르기도 한다.  
 
-여러개의 Master 출력을 한번에 묶을 수 있으니까, 회로도 간단해 지고, 또한 서로 다른 Master의 출력을 Slave의 정격 규격 - 전류나 전압 -을 Pull up에 의하여 쉽게 맞출 수가 있어 편리하게 이용된다.
+여러개의 Master 출력을 한번에 묶을 수 있으니까, 회로도 간단해 지고, 또한 서로 다른 Master의 출력을 Slave의 정격 규격 - 전류나 전압 -을 Pull up에 의하여 쉽게 맞출 수가 있어 편리하게 이용된다.  
+
+## High impedence & Floating
+
+가끔 Pin의 상태를 말할 때 **High Imedance** 혹은 **Floating**이라는 표현을 사용한다.  
+
+High impedence는 어떤 Digital chip pin이 내부에서 \\(∞\\) 저항이 달린 것과 마찬가지로 된 상태를 말한다. 만약 이런 High impedence pin과 여러 개의 pin이 공통 버스로 연결되어 있다면,
+High impedance 상태의 pin은 다른 chip들에 의해서 유기되어진 버스상의 값들의 변화에 관여하지 않게 된다. 이런 경우라면 High impedeance 상태의 pin에서 본다면 어떤 값이 될지 모르는 것이기 때문에 Floating 되어 있다고도 볼 수 있다.  
 
 <sub>
 출처: EMBEDDED RECIPES(corner book),  
