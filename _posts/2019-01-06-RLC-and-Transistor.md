@@ -61,6 +61,7 @@ Bypass Capacitor는 Noise, Ripple성분을 주파수 특성을 이용하여 GND�
 이 회로는 chip1에 CONTROL신호를 넣으면 USB_CONN/를 구동하는 회로다.  
 
 다시 말하면,
+
     ⓐ 다른 어떤 chip으로부터 CONTROL High drive  
     ⓑ CHIP1은 pin 5에 High drive  
     ⓒ TR ON  
@@ -87,7 +88,7 @@ R은 USB_CONN/이 Low active 이므로, 평상시 default상태를 High로 만�
 5번 port는 T1이 ON이 됨에 의하여 1번 port의 GND에 연결된다. 
 그러므로 OUT으로 연결되는 T2가 ON 되었으니까 OUT에 INPUT이 거의 다 걸리게 된다.  
 
-그러면 이번엔 반대 case인 CONTROL/의 신호가 Low인 경우에는 CONTROL이 Low가 되면서 T1이 off가 되고, T2도 덩달아서 off가 된다. 결국, +INPUT신호는 오갈 곳 없어 지는 거고 OUT에는 아무 것도 걸리지 않게 된다.  
+그러면 이번엔 반대 case인 CONTROL/의 신호가 Low인 경우에는 CONTROL이 Low가 되면서 T1이 off가 되고, T2도 덩달아서 off가 된다. 결국, +INPUT신호는 오갈 곳 없어지게 되고, OUT에는 아무 것도 걸리지 않게 된다.  
 
 결국, CONTROL/신호가 LOW일 때 OUTPUT에 아무것도 걸리지 않고, CONTROL/ 신호가 High일 때는 +INPUT신호가 OUT으로 나가게 되는 회로가 된다.  
 
