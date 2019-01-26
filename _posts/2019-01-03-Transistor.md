@@ -1,5 +1,5 @@
 ---
-title: 5\. Transistor 1%
+title: 05\. Transistor 1%
 categories:
     - Embedded Recipes
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 2\. Analog 신호와 Digital 신호, 그리고 Ground
+title: 02\. Analog 신호와 Digital 신호, 그리고 Ground
 categories:
     - Embedded Recipes
 tags:

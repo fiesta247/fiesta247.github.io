@@ -1,5 +1,5 @@
 ---
-title: 7\. RLC와 Transistor 感(감)
+title: 07\. RLC와 Transistor 感(감)
 categories:
     - Embedded Recipes
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 3\. 초간단 회로이론 R(저항), L(인덕터), C(캐패시터)
+title: 03\. 초간단 회로이론 R(저항), L(인덕터), C(캐패시터)
 categories:
     - Embedded Recipes
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 6\. Pull up, Pull down 그리고 Open collector
+title: 06\. Pull up, Pull down 그리고 Open collector
 categories:
     - Embedded Recipes
 tags:

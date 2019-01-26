@@ -1,5 +1,5 @@
 ---
-title: 8\. 논리회로로의 확장
+title: 08\. 논리회로로의 확장
 categories:
     - Embedded Recipes
 tags:

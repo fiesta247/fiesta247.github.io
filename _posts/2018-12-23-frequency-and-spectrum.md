@@ -1,5 +1,5 @@
 ---
-title: 1\. 신호와 주파수 영역 - Spectrum analysis
+title: 01\. 신호와 주파수 영역 - Spectrum analysis
 categories:
     - Embedded Recipes
 tags:
